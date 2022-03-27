@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: ${MONGODB_URI}
+  graphql:
+    path: /graphql
+    schema:
+      file-extensions:
+        - .graphqls
+        - .graphql
+    graphiql:
+      enabled: true
+    websocket:
+      path: /graphql
