@@ -3,10 +3,10 @@ schema {
 }
 
 type Query{
-    getQuestion(id: String): Question
+    questionById(id: ID!): Question
 }
 
 type Question {
-    id: String
-    question: String
+    id: ID!
+    question: String!
 }

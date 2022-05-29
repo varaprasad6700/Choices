@@ -15,8 +15,6 @@ public class QuestionService {
     private final QuestionRepo questionRepo;
 
     public Mono<QuestionModel> findById(String id) {
-        questionRepo.findAll().log().subscribe(questionModel -> log.info("{}",questionModel));
-        questionRepo.findById(new ObjectId(id)).log().subscribe(questionModel -> log.info("{}",questionModel));
         return questionRepo.findById(new ObjectId(id));
     }
 }

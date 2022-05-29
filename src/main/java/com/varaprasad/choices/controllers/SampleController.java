@@ -16,7 +16,7 @@ public class SampleController {
     private final QuestionService questionService;
 
     @QueryMapping
-    public Mono<QuestionModel> getQuestion(@Argument String id) {
+    public Mono<QuestionModel> questionById(@Argument String id) {
         return questionService.findById(id);
     }
 }
