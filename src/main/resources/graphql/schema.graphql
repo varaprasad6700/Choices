@@ -3,5 +3,10 @@ schema {
 }
 
 type Query{
-    sample : String
+    questionById(id: ID!): Question
+}
+
+type Question {
+    id: ID!
+    question: String!
 }

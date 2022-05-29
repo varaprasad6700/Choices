@@ -13,3 +13,10 @@ spring:
       enabled: true
     websocket:
       path: /graphql
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: "https://securetoken.google.com/choices-41be5"
+  main:
+    allow-bean-definition-overriding: true
